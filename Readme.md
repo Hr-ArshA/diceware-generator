@@ -17,7 +17,7 @@ A secure and user-friendly password/passphrase generator based on the Diceware m
 2. Install required dependencies:
 
 ```bash
-pip install click tqdm rich
+pip install -r requirements.txt
 ```
 
 3. Ensure you have the `diceware.db` SQLite database file in the same directory
@@ -29,13 +29,13 @@ pip install click tqdm rich
 Generate a simple 4-word passphrase (default):
 
 ```bash
-python diceware.py
+python main.py
 ```
 
 ### Advanced Options
 
 ```bash
-python diceware.py --dice-rolls 5 --nums 2 --char 1 --caps
+python main.py --dice-rolls 5 --nums 2 --char 1 --caps
 ```
 
 **Command Line Options:**
@@ -49,13 +49,13 @@ python diceware.py --dice-rolls 5 --nums 2 --char 1 --caps
 
 **Simple memorable passphrase:**
 ```bash
-python diceware.py --dice-rolls 4
+python main.py --dice-rolls 4
 # Example output: correcthorsebatterystaple
 ```
 
 **Strong password with enhancements:**
 ```bash
-python diceware.py --dice-rolls 5 --nums 3 --char 2 --caps
+python main.py --dice-rolls 5 --nums 3 --char 2 --caps
 # Example output: CorrectHorseBatteryStapleExtra42!!
 ```
 
@@ -82,17 +82,6 @@ The generator provides entropy estimates based on the number of words:
 2. Looks up corresponding words from the Diceware wordlist database
 3. Optionally adds numbers, special characters, and capitalization
 4. Combines all elements into a final password string
-
-## Database
-
-The application requires a SQLite database (`diceware.db`) containing the Diceware wordlist with the following structure:
-
-```sql
-CREATE TABLE diceware (
-    number INTEGER PRIMARY KEY,
-    word TEXT NOT NULL
-);
-```
 
 ## Requirements
 

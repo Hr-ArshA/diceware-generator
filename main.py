@@ -4,7 +4,6 @@ import time
 import sqlite3
 import secrets
 import click
-import json
 from tqdm import tqdm
 from rich import print as rprint
 from rich.panel import Panel
