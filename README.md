@@ -50,13 +50,52 @@ python main.py --dice-rolls 5 --nums 2 --char 1 --caps
 **Simple memorable passphrase:**
 ```bash
 python main.py --dice-rolls 4
-# Example output: correcthorsebatterystaple
+
+╭─────────────────────────────────────── Diceware Password Generator ────────────────────────────────────────╮
+│ Generate high-entropy passwords the easy way!                                                              │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Item: rk: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 4/4
+╭──────────────────────────────────────────── Diceware Password ─────────────────────────────────────────────╮
+│                                                                                                            │
+│ Your words:                                                                                                │
+│ 1. poke                                                                                                    │
+│ 2. torso                                                                                                   │
+│ 3. rude                                                                                                    │
+│ 4. rk                                                                                                      │
+│                                                                                                            │
+│ Your passphrase:                                                                                           │
+│ poketorsoruderk                                                                                            │
+│                                                                                                            │
+╰─────────────────────────────────── of possible passwords: 3 quadrillion ───────────────────────────────────╯
+     
 ```
 
 **Strong password with enhancements:**
 ```bash
 python main.py --dice-rolls 5 --nums 3 --char 2 --caps
-# Example output: CorrectHorseBatteryStapleExtra42!!
+
+╭─────────────────────────────────────── Diceware Password Generator ────────────────────────────────────────╮
+│ Generate high-entropy passwords the easy way!                                                              │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Item: =: 100%|███████████████████████████████████████████████████████████████████████████████████████████| 8/8
+╭──────────────────────────────────────────── Diceware Password ─────────────────────────────────────────────╮
+│                                                                                                            │
+│ Your words:                                                                                                │
+│ 1. Padre                                                                                                   │
+│ 2. Creak                                                                                                   │
+│ 3. Sex                                                                                                     │
+│ 4. Lisp                                                                                                    │
+│ 5. Gyp                                                                                                     │
+│ 6. 448                                                                                                     │
+│ 7. ?                                                                                                       │
+│ 8. =                                                                                                       │
+│                                                                                                            │
+│ Your passphrase:                                                                                           │
+│ PadreCreakSexLispGyp448?=                                                                                  │
+│                                                                                                            │
+╰─────────────────────────────────── of possible passwords: 13 nonillion ────────────────────────────────────╯
+               
+
 ```
 
 ## Security Features
